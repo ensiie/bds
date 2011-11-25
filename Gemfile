@@ -22,6 +22,7 @@ gem "bson_ext", "~> 1.4"
 gem "haml-rails"
 gem "devise"
 gem "pry-rails"
+gem "zurb-foundation"
 
 gem "rspec-rails", "~> 2.7.0", :group => [:development, :test]
 gem "database_cleaner", "~> 0.7.0", :group => :test
