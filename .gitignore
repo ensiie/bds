@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore yml config files
+/config/*.yml
+!/config/*.yml.example
