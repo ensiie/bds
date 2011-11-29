@@ -13,7 +13,7 @@ end
 
 Then /^My article should be visible on the home page$/ do
 	visit root_path
-	page.should have @article_title
-	page.should have @article_body
+	page.should have_content @article_title
+	page.should have_content @article_body
 end
 

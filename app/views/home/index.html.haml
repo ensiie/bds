@@ -15,11 +15,8 @@
       %input{ :type => "checkbox", :value => "Valeur 3", :name => "id3"}
       
       %input{ :type => "submit", :value => "Je vote", :class => "nice small radius blue button"}
-  .seven.columns.offset-by-one.article 
-    .titre
-      %h3 Titre article
-    .auteur
-      %h5 Auteur
-    .contenu
-      Contenu
-
+  .seven.columns.offset-by-one.article
+    - @articles.each do |article|
+      %article
+        %h3.titre=article.title
+        %p.contenu=article.body
