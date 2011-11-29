@@ -1,2 +1,25 @@
-%h1 Index
+.row
+  .three.columns.sondage.panel
+    %h3 Sondage
+    .question
+      %h4 Question 1
+      
+    %form 
+      %label{ :for => "id1"} Valeur 1
+      %input{ :type => "checkbox", :value => "Valeur 1", :name => "id1"}
+      %br
+      %label{ :for => "id2"} Valeur 2
+      %input{ :type => "checkbox", :value => "Valeur 2", :name => "id2"}
+      %br
+      %label{ :for => "id3"} Valeur 3
+      %input{ :type => "checkbox", :value => "Valeur 3", :name => "id3"}
+      
+      %input{ :type => "submit", :value => "Je vote", :class => "nice small radius blue button"}
+  .seven.columns.offset-by-one.article 
+    .titre
+      %h3 Titre article
+    .auteur
+      %h5 Auteur
+    .contenu
+      Contenu
 
