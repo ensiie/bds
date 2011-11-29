@@ -4,7 +4,7 @@ Bds::Application.routes.draw do
   root :to => 'home#index'
 	
 	namespace :admin do
-		root :to => '#index'
+		root :to => 'admin#index'
 		resources :articles
 	end
 
