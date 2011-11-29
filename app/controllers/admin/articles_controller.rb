@@ -4,8 +4,7 @@ class Admin::ArticlesController < Admin::AdminController
 	end
 
 	def create
-		(
-		@article = Article.create params[:article]) rescue binding.pry
+		@article = Article.create params[:article]
 		respond_with :admin, @article, :location => root_path
 	end
 end
