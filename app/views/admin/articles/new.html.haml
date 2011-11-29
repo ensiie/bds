@@ -1,0 +1,7 @@
+= form_for [:admin,@article] do |f|
+	%p
+		=f.text_field :title 
+		=f.text_area :body
+	%p
+		=f.submit
+
